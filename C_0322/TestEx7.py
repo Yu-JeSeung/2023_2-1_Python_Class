@@ -9,7 +9,6 @@ elif(select==2):
     sum=0
     for i in range(num1,num2+1):
         sum+=i
-    print('두 숫자 사이의 합은 : %d'%sum)
+    print('%d 와 %d 숫자 사이의 합은 : %d'%(num1,num2,sum))
 else :
     print('1 또는 2만 입력하세요.')
-
