@@ -10,7 +10,7 @@ while n>0:
         print('%d '%slot[k],end='')
         t.sleep(1)
 
-    if slot[0]+slot[1]+slot(2)==21:
+    if(slot[0]==7 and slot[1]==7 and slot(2)==7):
         print('잭팟이 터졌네요')
         break
     else:

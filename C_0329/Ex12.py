@@ -12,7 +12,3 @@ for k in range(num2):
 
 for k in range(num2):
     print(result[k])
-
-print(result[0])
-print(result[1])
-print(result[2])
