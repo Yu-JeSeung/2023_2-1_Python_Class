@@ -10,6 +10,8 @@ for k in range(num2):
         sum+=nlist[k]
     result.append(sum)
 
+for k in range(num2):
+    print(result[k])
 
 print(result[0])
 print(result[1])
