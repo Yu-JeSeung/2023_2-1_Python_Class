@@ -19,3 +19,5 @@ print(mdic_list)
 # 와퍼킹버거 : 7000
 # 새우버거 : 5500
 # 나이스버거 : 2000
+for key,value in mdic_list.items():
+    print(key,':',value)
