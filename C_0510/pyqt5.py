@@ -13,7 +13,7 @@ class MyApp(QWidget):
         self.setLayout(vbox)
         
         # 리스트에 저장
-        self.fruits = ["사과", "배", "감자", "딸기"]
+        self.fruits = ["고돈", "백채", "시골집", "국수나무"]
 
         # 과일 리스트 체크박스 위젯 생성
         for fruit in self.fruits:
@@ -25,7 +25,11 @@ class MyApp(QWidget):
         button.clicked.connect(self.showSelectedFruits)
         vbox.addWidget(button)
 
-        self.setWindowTitle("과일 선택")
+        # 새로 버튼 하나 만들기
+        button2 = QPushButton("맘에 안들면 새로 의견 내던가",self)
+        vbox.addWidget(button2)
+
+        self.setWindowTitle("점메 선택")
         self.setGeometry(500, 500, 400, 300)
         self.show()
     
@@ -36,8 +40,9 @@ class MyApp(QWidget):
             checkbox = self.layout().itemAt(index).widget()
             if checkbox.isChecked():
                 selected_fruits.append(self.fruits[index])
-        print("선택한 과일:", ", ".join(selected_fruits))
+        print("선택한 오늘의 점심은? ", ", ".join(selected_fruits))
 
+    
 
 if __name__ == "__main__" :
     #QApplication : 프로그램을 실행시켜주는 클래스
